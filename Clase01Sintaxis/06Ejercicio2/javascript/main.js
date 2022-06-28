@@ -14,8 +14,15 @@
     "La multiplicación de los números ingresados es: 80"
 
     Y en la consola: 
-    "La suma de los números ingresados es: 18"
-
-
+    "La suma de los números ingresados es: 18
 
 */
+
+
+
+  let numero1 = Number(prompt("Ingrese un numero"))
+  let numero2 = Number(prompt("Ingrese otro numero"))
+  let suma = numero1+numero2
+  let mul = numero1*numero2
+  alert(`Multiplicación ${mul}`)
+  console.log(`Suma, ${suma}`)
