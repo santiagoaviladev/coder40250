@@ -20,7 +20,7 @@
 
 
 
-  let numero1 = Number(prompt("Ingrese un numero"))
+  let numero1 = Number(prompt("Ingrese un numero")) // parseInt(prompt("Ingrese un numero"))
   let numero2 = Number(prompt("Ingrese otro numero"))
   let suma = numero1+numero2
   let mul = numero1*numero2
