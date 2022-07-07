@@ -17,15 +17,35 @@
 
 let numPaquetes = Number(prompt("Ingrese numero de paquetes"))
 let contador=0;
+let promedio=0;
+let mayor = 0;
+let menor = 0;
+
 while(contador<numPaquetes)
 {
     let pesoPaquete = Number(prompt(`Ingrese el peso del paquete ${contador+1}`))
+    promedio+= pesoPaquete;
+    
+    if(pesoPaquete>mayor)
+    {
+        mayor = pesoPaquete;
+    }
 
-    console.log(pesoPaquete)
+    if(contador===0)
+    {
+        menor = pesoPaquete;
+    }
+
+    if(pesoPaquete<menor)
+    {
+        menor = pesoPaquete;
+    }
 
     contador++;
 } 
-
+console.log(`El promdio es ${promedio/numPaquetes}`)
+console.log(`El mayor es ${mayor}`)
+console.log(`El menor es ${menor}`)
 
 /*
     1. Pedirle al usuario el número de paquetes.
