@@ -22,6 +22,49 @@
         3.2 Si no, mostrar "ERROR"
   */ 
 
+    let nombreUsuario = ""
+    let contra = ""
+    init();
+
+    function init()
+    {
+      pedirDatos()
+      let esValido = validarDatos(nombreUsuario,contra)
+      validarLogin(esValido)
+    }
+
+    function pedirDatos()
+    {
+      nombreUsuario = prompt("Inrgese nombre usuario")
+      contra = prompt("Ingrese Contraseña")
+      
+    }
+
+    function validarDatos(username, pwd)
+    {
+      let esValido = false;
+      if(username==="usuario1" && pwd==="password1")
+      {
+        esValido=true;
+      }
+      return esValido;
+    }
+
+    function validarLogin(isValid)
+    {
+       if(!isValid)
+       {
+          alert("ERROR")
+          init();  
+
+       }
+       else
+       {
+         alert("LOGIN EXITOSO")
+       }
+    }
+
+
 
     
 
