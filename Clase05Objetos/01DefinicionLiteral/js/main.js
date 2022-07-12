@@ -42,3 +42,30 @@ const miCarritoDeCompras = {
 }
 
 console.log(miCarritoDeCompras);
+
+/*
+Pedirle al usuario los datos de un producto: 
+ 1. SKU
+ 2. Nombre
+ 3. Precio 
+ 4. Descripción
+
+ Crear un objeto literal con los datos 
+ Imprimir el objeto.
+*/
+
+ const sku = prompt("Ingrese SKU");
+ const nombre = prompt("Ingrese Nombre");
+ const precio = Number(prompt("Ingrese Precio"));
+ const descripcion = prompt("Ingrese Descripción");
+
+ const miProducto = {
+     sku: sku, 
+     nombre: nombre, 
+     precio: precio,
+     descripcion: descripcion,
+ }
+
+ console.log("SKU", miProducto.sku, "PRECIO", miProducto.precio )
+ console.log("NOMBRE", miProducto["sku"])
+
