@@ -6,6 +6,7 @@
         this.id=id;
         this.nombre=nombre;
         this.precio=precio;
+    
     }
 
     getIva()
@@ -13,7 +14,7 @@
         return this.precio*0.21;
     }
 
-   }
+}
 
    const producto1 = new Producto(1, "Café", 200);
    const iva = producto1.getIva();
