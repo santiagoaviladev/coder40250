@@ -1,13 +1,17 @@
 
-//length
+  const villanos = ["Jocker", "Thanos", "Darth Vader", "Úrsula", "Bane"]
 
 //push
 // agrega un elemento al final del array
+// MODIFICA EL ARRAY
+villanos.push("Dr. Frío");
+console.log(villanos);
  
 
 //unshift
 // agrega un elemento al inicio del array
- 
+villanos.unshift("Lex Luthor");
+console.log(villanos);
 
 
 //pop
@@ -46,4 +50,4 @@
 
 
 //reverse
-mascotas.reverse(); // invierte el array
+// invierte el array

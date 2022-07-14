@@ -1,20 +1,21 @@
 
  //numeros
-  const misNumeros = [100,24,49,55,29];
-  console.log("NUMEROS", misNumeros);
-  
+ const misNumeros = [22,10,7,5896,4,9,32,17];
+ console.log("NUMEROS", misNumeros);
  
  //cadenas
- const misPalabras = ["hola", "otra", "palabra", "u", "1"];
- console.log("PALABRAS", misPalabras);
-
+ const misCadenas = ["Hola","Esto","Es","Un","Array"];
+ console.log("CADENAS DE TEXTO", misCadenas);
 
  //booleanos 
- const misBoleanos = [true,false,true,false,false];
- console.log("BOOLEADNOS", misBoleanos);
-
- //mixto
- const mixto = [true,"hola",1,-2,{nombre:"Nicolas", id:1}, [1,2,4,5,6,7,8], ()=>{console.log("hola")}];
- console.log("MIXTO", mixto);
-
+ const misBoleanos = [false, true, false, true, true, false];
+ console.log("BOOLEANOS", misBoleanos);
  
+ //mixto
+ const arrayMixto = [false, "HOLA", 2, 890, 50, 45,true,"CACEROLA"];
+ console.log("MIXTO", arrayMixto);
+ 
+
+ //objetos
+ const arrayObjetos = [{nombre:"Santi", apellido:"Avila"}, {nombre:"Jonatan", apellido:"Galvano"} ];
+ console.log("arrayObjetos", arrayObjetos);
