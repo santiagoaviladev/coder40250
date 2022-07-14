@@ -10,7 +10,7 @@ Escribir un programa para administrar villanos:
 
 */
 
-const villanos = [];
+const villanos = ["Jocker", "Thanos", "Darth Vader", "Úrsula", "Bane"]
 
 mostrarMenu();
 
@@ -22,6 +22,8 @@ function mostrarMenu() {
         opcion = prompt(`Seleccione una opcion: 
                         A. Ingresar Villano
                         B. Listar Villanos
+                        C. Buscar Un Villano (Decir si está o no está)
+                        D. Borrar Un Villano (dado su nombre)
                         K. FIN`);
 
         switch (opcion) {
