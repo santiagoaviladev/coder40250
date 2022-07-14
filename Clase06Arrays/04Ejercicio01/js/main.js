@@ -9,3 +9,46 @@ Escribir un programa para administrar villanos:
 4. Mostrar el menu, siempre que no se seleccione K.
 
 */
+
+const villanos = [];
+
+mostrarMenu();
+
+
+function mostrarMenu() {
+    let opcion = "";
+    while (opcion !== "K") {
+
+        opcion = prompt(`Seleccione una opcion: 
+                        A. Ingresar Villano
+                        B. Listar Villanos
+                        K. FIN`);
+
+        switch (opcion) {
+            case "A":
+                ingresarVillano();
+                break;
+            case "B":
+                listarVillanos();
+                break;
+            case "K":
+                alert("GRACIAS");
+                break;
+            default:
+                alert("opcion inválida")
+                break;
+        }
+    }
+
+}
+
+function ingresarVillano() {
+    let nuevoVillano = prompt("Ingrese un nuevo villano")
+    villanos.push(nuevoVillano);
+    alert("Villano ingresado con Éxito")
+}
+
+
+function listarVillanos() {
+    console.log(villanos);
+}
