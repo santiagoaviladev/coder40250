@@ -56,6 +56,7 @@ const index = villanos.indexOf("Úrsula")
 console.log("INDEX OF", index);
 
 //includes
+// Me dice si un elemento está o no está en un array
 const esta = villanos.includes("Thanos")
 console.log("ESTA", esta);
 

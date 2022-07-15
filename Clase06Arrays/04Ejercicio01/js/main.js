@@ -33,6 +33,12 @@ function mostrarMenu() {
             case "B":
                 listarVillanos();
                 break;
+            case "C":
+                buscarVillano();
+                break;
+            case "D":
+                borrarVillano();
+                break;
             case "K":
                 alert("GRACIAS");
                 break;
@@ -53,4 +59,35 @@ function ingresarVillano() {
 
 function listarVillanos() {
     console.log(villanos);
+}
+
+
+function buscarVillano()
+{
+    let villanoABuscar = prompt("Ingrese el villano que busca")
+     const esta = villanos.includes(villanoABuscar);
+     if(esta)
+     {
+         alert("SI ESTÁ")
+     }
+     else 
+     {
+         alert("NO ESTÁ")
+     }
+  
+}
+
+function borrarVillano()
+{
+    let villanoABorrar = prompt("Ingrese el villano que quiere borrar")
+    let indice = villanos.indexOf(villanoABorrar);
+    if(indice===-1) // NO ENCONTRÓ EL DATO
+    {
+        alert("VILLANO NO EXISTE")
+    }
+    else {
+        villanos.splice(indice,1)
+        alert("VILLANO BORRADO CON ÉXITO")
+    }
+   
 }
