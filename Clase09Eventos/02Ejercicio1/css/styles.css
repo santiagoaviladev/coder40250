@@ -1,0 +1,16 @@
+
+.boton 
+{
+    width: 200px;
+    border-radius: 20px;
+    background-color: aqua;
+    margin-left: 3%;
+    padding:1%;
+    border: 2px solid blue;
+    cursor: hand;
+    cursor:pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+
+}
