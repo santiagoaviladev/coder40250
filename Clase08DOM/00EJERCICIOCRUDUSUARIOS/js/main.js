@@ -97,10 +97,10 @@ function actualizarVillano() {
     let nombre = prompt("Ingrese un nombre")
     let edad = Number(prompt("Ingrese una edad"))
     let arma = prompt("Ingrese un arma")
-    let imagen = prompt("Ingrese Imagen")
+    let img = prompt("Ingrese Imagen")
 
     catalogoVillanos.modificarVillano(nombreABuscar, nombre, edad, arma, img);
-
+    listarVillanos();
 }
 
 function ordenarVillanos()

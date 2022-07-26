@@ -40,7 +40,7 @@ class CatalogoVillanos {
 
 
     }
-    modificarVillano(nombreABuscar, nombre, edad, arma)
+    modificarVillano(nombreABuscar, nombre, edad, arma, img)
     {
         let villanoEncontrado = this.villanos.find((villano) =>
             villano.nombre.includes(nombreABuscar)
@@ -50,6 +50,7 @@ class CatalogoVillanos {
             villanoEncontrado.nombre=nombre;
             villanoEncontrado.edad=edad;
             villanoEncontrado.arma=arma;
+            villanoEncontrado.img=img
             console.log("Villanos MOd", this.villanos);
         }
         else{
