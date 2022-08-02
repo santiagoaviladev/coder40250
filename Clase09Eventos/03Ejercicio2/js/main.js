@@ -1,8 +1,10 @@
 mostrarMenu();
+const opciones = ["Cargar Pregunta", "Jugar"]
+
 
 function mostrarMenu()
 {
-    const opciones = ["Cargar Pregunta", "Jugar"]
+ 
     opciones.forEach((opcion)=>{
         mostrarOpcion(opcion)
     })
