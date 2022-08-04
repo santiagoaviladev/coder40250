@@ -13,7 +13,8 @@ const productos = [
     {
         id:3,
         nombre: 'MacBook Air 2017',
-        categoria: 1
+        categoria: 1,
+
     },
     {
         id:4,

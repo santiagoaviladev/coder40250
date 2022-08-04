@@ -3,6 +3,7 @@ const categorias = [
         {
             id:1,
             nombre: 'Computadores',
+           
         },
         {
             id:2,
