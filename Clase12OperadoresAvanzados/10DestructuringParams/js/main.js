@@ -1,22 +1,24 @@
-
-  class Operandos {
-      constructor(operando1,operando2)
-      {
-          this.operando1=operando1;
-          this.operando2=operando2;
-      }
+ 
+  let producto = {
+      id: 1,
+      nombre: "MAC AIR 2015",
+      valor: 1500,
+      promocion: '20%',
+      color: "Negro",
   }
 
-  const numeros = new Operandos(2,3);
+  let servicio = {
+    id: 1,
+    nombre: "Capacitación",
+    valor: 1500,
+  }
 
-  sumar(numeros);
-/*
-  function sumar(numeros)
-  {
-      alert(numeros.operando1+numeros.operando2);
-  }*/
 
-  function sumar({operando1,operando2})
+
+  imprimirIva(producto);
+  imprimirIva(servicio);
+
+  function imprimirIva( {valor})
   {
-      alert(operando1+operando2);
+     console.log(valor, valor*0.25, valor+valor*0.25);
   }
