@@ -20,6 +20,7 @@
     }
 
    
+   
     const producto2 = {...producto, caja:"carton"};
     producto2.id=2;
     console.log("PRODUCTO:", producto);
